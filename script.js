@@ -6,5 +6,7 @@ $(document).ready(function () {
 			$('#jamp_and_platform').removeClass('active');
 		});
 	});
-
+	$('#button_big').click(function () {
+		$('#big_text').addClass('active');
+	});
 });
