@@ -5,7 +5,7 @@ html, body{
 	height: 100%;
 	font-family: Oswald, monospace;
 	font-weight: bold;
-	overflow-x: none;
+	overflow-x: hidden;
 }
 header{
 	width: 100%;
@@ -15,11 +15,8 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	position: relative;
-}
-.container {
-	width: 85%;
-	margin: 0 auto;
+	position: relative; 
+	padding: 0 10%;
 }
 .logo{
 	/*float: right;*/
@@ -62,7 +59,7 @@ header{
 	background: white;
 	display: flex;
 	flex-direction: column;
-	padding: 40px 0;
+	padding: 40px 10%;
 	box-sizing: border-box;
 }
 .container-prog p{
@@ -133,38 +130,46 @@ hr{
 }
 .line_1 {
 	transform: rotate(-2deg);
-	width: 99.98%;
-	height: 50px;
+	width: 120%;
+	height: 100px;
 	background: #016F94;
 	position: absolute;
 	top: -25px;
+	left: -10px;
 
 }
 .line_2{
 	transform: rotate(-2deg);
-	width: 99.98%;
-	height: 50px;
+	width: 120%;
+	height: 100px;
 	background: #016F94;
 	position: absolute;
 	bottom: -25px;
-	left: -0.99px;
+	left: -10px;
+	-webkit-box-shadow: 0px 19px 20px -15px #000000; 
+	box-shadow: 0px 19px 20px -15px #000000;
+	z-index: 2;
 }
 .line_3{
 	transform: rotate(2deg);
-	width: 99.98%;
-	height: 50px;
+	width: 120%;
+	height: 100px;
 	background: #FBAB69;
 	position: absolute;
 	top: -25px;
-	left: -0.99px;
+	left: -10px;
 }
 .line_4{
 	transform: rotate(2deg);
-	width: 99.98%;
-	height: 50px;
+	width: 120%;
+	height: 100px;
 	background: #FBAB69;
 	position: absolute;
 	bottom: -25px;
+	-webkit-box-shadow: 0px 19px 20px -15px #000000; 
+	box-shadow: 0px 19px 20px -15px #000000;
+	z-index: 2;
+	left: -10px;
 }
 .container-about{
 	width: 100%;
@@ -179,6 +184,7 @@ hr{
 	box-sizing: border-box;
 	color: white;
 	position: relative;
+	z-index: 3;
 }
 .container-about p{
 	padding: 0;
@@ -194,6 +200,7 @@ hr{
 	cursor: pointer;
 	margin: 20px;
 	font-size: 20px;
+	z-index: 3;
 }
 .about_btn_hide {
 	width: 180px;
@@ -205,6 +212,7 @@ hr{
 	cursor: pointer;
 	margin: 20px;
 	font-size: 20px;
+	z-index: 3;
 }
 .about_btn:hover{
 	-webkit-box-shadow: 0px 6px 22px -1px #000000; 
@@ -221,12 +229,13 @@ hr{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 100 10%;
+	padding: 30px 10%;
 	text-align: center;
 	box-sizing: border-box;
 	color: white;
 	margin: 130px 0 50px 0;
 	position: relative;
+	z-index: 3;
 }
 .about_text_two{
 	padding: 0;
@@ -238,7 +247,7 @@ footer{
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
-	padding: 20px 0;
+	padding: 20px 10%;
 }
 footer p{
 	padding: 0;
@@ -270,6 +279,7 @@ a {
 	opacity: 0;
 	transition: 0.3s;
 	visibility: hidden;
+	z-index: 50;
 }
 .popab-wrap.active {
 	opacity: 1;
@@ -279,7 +289,6 @@ a {
 	width: 80%;
 	padding: 30px 60px;
 	background-color: #FEDFB1;
-	z-index: 50;
 	display: flex;
 	border-radius: 20px;
 }
@@ -314,7 +323,7 @@ a {
 	flex-direction: column;
 	align-items: flex-end;
 }
-@media (max-width: 984px) {
+/*@media (max-width: 984px) {
 	.line_1 {
 		width: 99.97%;
 
@@ -357,7 +366,7 @@ a {
 	.line_4{
 		width: 99.7%;
 	}
-}
+}*/
 @media (max-width: 1170px) {
 	.second-text-hello {
 		font-size: 20px;
